@@ -55,8 +55,10 @@ public class wordAdapter extends ArrayAdapter<word> {
         iconView.setImageResource(Currentword.getImageResourceId());
 
         View textContainer = listItemView.findViewById(R.id.text_container);
+        View textContainer2 = listItemView.findViewById(R.id.play);
         int color = ContextCompat.getColor(getContext(), mColorResourcId);
         textContainer.setBackgroundColor(color);
+        textContainer2.setBackgroundColor(color);
 
         // Return the whole list item layout (containing 2 TextViews and an ImageView)
         // so that it can be shown in the ListView

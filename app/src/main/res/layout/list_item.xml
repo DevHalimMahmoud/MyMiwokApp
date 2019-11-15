@@ -20,12 +20,14 @@
     android:minHeight="?android:attr/listPreferredItemHeight"
     android:orientation="horizontal"
 
+
     >
 
     <ImageView
         android:id="@+id/list_item_icon"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground" />
 
     <LinearLayout
         android:id="@+id/text_container"
@@ -35,7 +37,8 @@
         android:gravity="start"
         android:orientation="vertical"
         android:paddingLeft="16dp"
-        android:textAlignment="textStart">
+        android:textAlignment="textStart"
+        android:background="?android:attr/selectableItemBackground">
 
         <TextView
             android:id="@+id/miwok_text_view"
@@ -59,5 +62,12 @@
             android:textColor="@android:color/white" />
 
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@android:drawable/ic_media_play"
+        android:background="?android:attr/selectableItemBackground" />
 
 </LinearLayout>

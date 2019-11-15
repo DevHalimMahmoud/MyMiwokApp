@@ -7,35 +7,59 @@
     android:orientation="vertical"
     tools:context="com.example.android.miwok.MainActivity">
 
-    <TextView
-        android:id="@+id/numbers"
-        style="@style/CategoryStyle"
-        android:layout_height="88dp"
+    <!-- Numbers category -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:background="@color/category_numbers"
-        android:onClick="numbers"
-        android:text="@string/category_numbers" />
+        android:onClick="numbers">
 
-    <TextView
-        android:id="@+id/family"
-        style="@style/CategoryStyle"
+        <TextView
+            android:id="@+id/numbers"
+            style="@style/CategoryStyle"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/category_numbers" />
+    </FrameLayout>
+
+    <!-- Family category -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:background="@color/category_family"
-        android:onClick="family"
-        android:text="@string/category_family"
+        android:onClick="family">
 
-        />
+        <TextView
+            android:id="@+id/family"
+            style="@style/CategoryStyle"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/category_family" />
+    </FrameLayout>
 
-    <TextView
-        android:id="@+id/colors"
-        style="@style/CategoryStyle"
+    <!-- Colors category -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:background="@color/category_colors"
-        android:onClick="colors"
-        android:text="@string/category_colors" />
+        android:onClick="colors">
 
-    <TextView
-        android:id="@+id/phrases"
-        style="@style/CategoryStyle"
+        <TextView
+            android:id="@+id/colors"
+            style="@style/CategoryStyle"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/category_colors" />
+    </FrameLayout>
+
+    <!-- Phrases category -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:background="@color/category_phrases"
-        android:onClick="phrases"
-        android:text="@string/category_phrases" />
+        android:onClick="phrases">
 
+        <TextView
+            android:id="@+id/phrases"
+            style="@style/CategoryStyle"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/category_phrases" />
+    </FrameLayout>
 </LinearLayout>
