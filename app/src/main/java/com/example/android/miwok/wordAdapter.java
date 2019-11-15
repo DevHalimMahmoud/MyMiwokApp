@@ -21,7 +21,7 @@ public class wordAdapter extends ArrayAdapter<word> {
         // the second argument is used when the ArrayAdapter is populating a single TextView.
         // Because this is a custom adapter for two TextViews and an ImageView, the adapter is not
         // going to use this second argument, so it can be any value. Here, we used 0.
-        super(context,0,words);
+        super(context, 0, words);
         mColorResourcId = colorResourcId;
     }
 
@@ -41,13 +41,13 @@ public class wordAdapter extends ArrayAdapter<word> {
         TextView miwokTextView = (TextView) listItemView.findViewById(R.id.miwok_text_view);
         // Get the version name from the current AndroidFlavor object and
         // set this text on the name TextView
-        miwokTextView.setText(((word) Currentword).getmMiwokTranslation());
+        miwokTextView.setText(Currentword.getmMiwokTranslation());
 
         // Find the TextView in the list_item.xml layout with the ID version_number
         TextView defaultTextView = (TextView) listItemView.findViewById(R.id.default_text_view);
         // Get the version number from the current AndroidFlavor object and
         // set this text on the number TextView
-        defaultTextView.setText(((word) Currentword).getDefaultTranslation());
+        defaultTextView.setText(Currentword.getDefaultTranslation());
 
         // Find the ImageView in the list_item.xml layout with the ID list_item_icon
         ImageView iconView = (ImageView) listItemView.findViewById(R.id.list_item_icon);

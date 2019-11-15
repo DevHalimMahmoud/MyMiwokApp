@@ -26,11 +26,11 @@ public class word {
     }
 
 
-    public  String getmMiwokTranslation() {
+    public String getmMiwokTranslation() {
         return mMiwokTranslation;
     }
 
-    public  int getImageResourceId() {
+    public int getImageResourceId() {
         return mImageResourceId;
     }
 
