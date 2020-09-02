@@ -68,7 +68,7 @@ public class NumbersFragment extends Fragment {
         words.add(new word("ten", "na’aacha", R.drawable.number_ten, R.raw.number_ten));
 
 
-        ArrayAdapter adapter = new wordAdapter(getActivity(), words, R.color.category_numbers);
+        ArrayAdapter<word> adapter = new wordAdapter(getActivity(), words, R.color.category_numbers);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
